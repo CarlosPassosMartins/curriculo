@@ -1,0 +1,218 @@
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.65;
+    color: #1a1a1a;
+    background: #f4f2ed;
+    padding: 40px 20px;
+}
+
+.page {
+    max-width: 780px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #ddd8ce;
+    padding: 56px 60px;
+}
+
+/* ── HEADER ── */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    padding-bottom: 28px;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 32px;
+}
+
+.nome {
+    font-family: 'EB Garamond', serif;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+    line-height: 1.1;
+}
+
+.cargo {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    margin-top: 4px;
+}
+
+.contatos {
+    text-align: right;
+    font-size: 12.5px;
+    color: #555;
+    line-height: 2;
+}
+
+.contatos a {
+    color: #555;
+    text-decoration: none;
+}
+
+/* ── LAYOUT ── */
+.corpo {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+}
+
+/* ── SIDEBAR ── */
+.sidebar section {
+    margin-bottom: 28px;
+}
+
+.sidebar h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e0dbd0;
+}
+
+.sidebar p,
+.sidebar li {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tag-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    background: #f4f2ed;
+    border: 1px solid #ddd8ce;
+    font-size: 11.5px;
+    color: #444;
+    padding: 3px 9px;
+    border-radius: 2px;
+}
+
+.barra-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.barra-label {
+    font-size: 12.5px;
+    color: #333;
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.barra-bg {
+    flex: 1;
+    height: 5px;
+    background: #e8e4dc;
+    border-radius: 99px;
+}
+
+.barra-fill {
+    height: 100%;
+    background: #1a1a1a;
+    border-radius: 99px;
+}
+
+/* ── MAIN ── */
+.main section {
+    margin-bottom: 30px;
+}
+
+.main h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e0dbd0;
+}
+
+.entrada {
+    margin-bottom: 18px;
+}
+
+.entrada-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.entrada-titulo {
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.entrada-data {
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.entrada-sub {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.entrada-desc {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.entrada-desc ul {
+    padding-left: 16px;
+    margin-top: 4px;
+}
+
+.entrada-desc li {
+    margin-bottom: 3px;
+}
+
+.resumo p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.75;
+}
+
+.res {
+    color:#999 !important;
+    font-size:12px !important;
+    margin-bottom:6px !important;
+}
+
+@media print {
+    body { background: white; padding: 0; }
+    .page { border: none; padding: 40px 50px; }
+}
